@@ -1,0 +1,3 @@
+# Unexpected Results with Mutable Variables in F# Functions
+
+This example showcases a potential pitfall when using mutable variables in F# functions.  The initial sum is correctly calculated, however, subsequent modifications to `x` and `y` do not affect the result of the `add` function because the values are captured at the time of the function call, not dynamically updated.  The solution demonstrates a better approach using functions that directly use the current values of mutable variables, ensuring the output reflects the changes.
